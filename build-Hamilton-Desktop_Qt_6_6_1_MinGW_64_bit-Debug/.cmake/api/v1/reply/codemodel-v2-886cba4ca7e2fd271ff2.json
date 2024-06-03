@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-fd58861927adab182f3a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Hamilton",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Hamilton::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Hamilton-Debug-025acc805ad869a14d2f.json",
+					"name" : "Hamilton",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Hamilton_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Hamilton_autogen-Debug-1ac55954617fc07c81d3.json",
+					"name" : "Hamilton_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Hamilton_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Hamilton_autogen_timestamp_deps-Debug-88e53b4a24a32486f7b5.json",
+					"name" : "Hamilton_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Code/CplusPlus/Hamilton/build-Hamilton-Desktop_Qt_6_6_1_MinGW_64_bit-Debug",
+		"source" : "D:/Code/CplusPlus/Hamilton/Hamilton"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
