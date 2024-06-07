@@ -391,8 +391,8 @@ D:/Code/CplusPlus/Hamilton/Hamilton/mainwindow.h
  mdp:D:/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h
  mdp:D:/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:D:/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
-D:/Code/CplusPlus/Hamilton/Hamilton/mainwindow.cpp
 D:/Code/CplusPlus/Hamilton/Hamilton/main.cpp
+D:/Code/CplusPlus/Hamilton/Hamilton/mainwindow.cpp
 D:/Code/CplusPlus/Hamilton/Hamilton/DockWidget.cpp
 D:/Code/CplusPlus/Hamilton/Hamilton/Matrix.h
 D:/Code/CplusPlus/Hamilton/Hamilton/Matrix.cpp

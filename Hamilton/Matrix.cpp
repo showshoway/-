@@ -5,18 +5,7 @@
 #include <list>
 #include <algorithm>
 
-void permute(std::vector<int>& nums, int start, std::vector<std::vector<int>>& result) {
-    if (start == nums.size() - 1) {
-        result.push_back(nums);
-        return;
-    }
 
-    for (int i = start; i < nums.size(); ++i) {
-        std::swap(nums[start], nums[i]);
-        permute(nums, start + 1, result);
-        std::swap(nums[start], nums[i]);  // 回溯
-    }
-}
 
 int min(int a, int b)
 {
@@ -127,36 +116,38 @@ Hamilton* Matrix::findHamilton()
         index.push_back(i);
     }
 
-    std::vector<std::vector<int>> results;
-    permute(index, 0, results);//穷举排列组合并存入results中
+
 
     int sum = 0;
-    for(std::vector<int> result : results)
+    do
     {
         sum = 0;
         for(int j = 0; j < matrix->size() - 1; j++)
         {
-            sum += (*matrix)[result[j]][result[j + 1]];
+            sum += (*matrix)[index[j]][index[j+1]];
         }
+
         if(minHamilton == nullptr)
         {
             minHamilton = new Hamilton();
             minHamilton->weightValue = sum;
-
-            for(int j = 0; j < matrix->size(); j++)
+            for(int k = 0; k < matrix->size(); k++)
             {
-                minHamilton->order.push_back(result[j]);
+                minHamilton->order.push_back(index[k]);
             }
+            continue;
         }
         else if(sum < minHamilton->weightValue)
         {
             minHamilton->weightValue = sum;
-            for(int j = 0; j < matrix->size(); j++)
+            for(int k = 0; k < matrix->size(); k++)
             {
-                minHamilton->order[j] = result[j];
+                minHamilton->order.at(k) = index[k];
             }
         }
-    }
+
+
+    }while(std::next_permutation(index.begin(), index.end()));
 
     return minHamilton;
 
